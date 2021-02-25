@@ -1,0 +1,19 @@
+yarn init -y
+yarn add express
+yarn add @types/express -D
+yarn add typescript -D
+yarn tsc --init
+
+ --- em tsconfig mudar para "strict": false
+
+yarn add ts-node-dev -D
+
+--- em package.json abaixo de "license":
+  "scripts": {
+    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts"
+  },
+
+--- para rodar: 
+yarn dev
+
+#rumoaoproximonivel
