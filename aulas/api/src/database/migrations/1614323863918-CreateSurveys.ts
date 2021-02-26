@@ -1,38 +1,37 @@
 import { MigrationInterface, QueryRunner, Table } from "typeorm";
 
-export class CreateUsers1614283220959 implements MigrationInterface {
-    
+export class CreateSurveys1614323863918 implements MigrationInterface {
+
     public async up(queryRunner: QueryRunner): Promise<void> {
         await queryRunner.createTable(
             new Table({
-                name: "users",
+                name: "surveys",
                 columns: [
                     {
                         name: "id",
                         type: "uuid",
-                        isPrimary: true,
+                        isPrimary: true
                     },
                     {
-                        name: "name",
-                        type: "varchar",
+                        name: "title",
+                        type: "varchar"
                     },
                     {
-                        name: "email",
-                        type: "varchar",
+                        name: "description",
+                        type: "varchar"
                     },
                     {
                         name: "created_at",
                         type: "timestamp",
-                        default: "now()",
-                    },
+                        default: "now()"
+                    }
                 ]
             })
-            )
-        }
-        
-        public async down(queryRunner: QueryRunner): Promise<void> {
-            await queryRunner.dropTable("users");
-        }
-        
+        )
     }
-    
+
+    public async down(queryRunner: QueryRunner): Promise<void> {
+        await queryRunner.dropTable("surveys");
+    }
+
+}
