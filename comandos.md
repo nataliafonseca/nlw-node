@@ -75,3 +75,26 @@ yarn add uuid
 yarn add @types/uuid -D
 ```
 
+
+## Aula 3 - Testes - #focopraticagrupo
+
+```
+yarn add jest @types/jest -D
+```
+
+```
+yarn jest --init
+```
+
+```
+yarn add ts-jest -D
+```
+
+```
+yarn add supertest @types/supertest -D
+```
+
+```
+yarn add cross-env -D
+```
+
