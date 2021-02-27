@@ -1,3 +1,9 @@
+```bash
+yarn add -D eslint typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin
+```
+
+
+
 ## Aula 1 - #rumoaoproximonivel
 
 ```
@@ -96,5 +102,15 @@ yarn add supertest @types/supertest -D
 
 ```
 yarn add cross-env -D
+```
+
+## Aula 4 - Envio de E-mail
+```
+yarn add nodemailer
+yarn add @types/nodemailer -D
+```
+
+```
+yarn add handlebars
 ```
 
