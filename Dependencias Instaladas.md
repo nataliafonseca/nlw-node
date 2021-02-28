@@ -114,3 +114,7 @@ yarn add @types/nodemailer -D
 yarn add handlebars
 ```
 
+```
+yarn add yup
+```
+
