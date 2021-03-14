@@ -60,13 +60,19 @@ Em ./ormconfig.json:
 
 ```
 
+em ./package.json, adicionar novo script:
+```json
+  "scripts": {
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
+  },
+```
+
 ```
 cd ./src
 mkdir database
 cd ./database
 touch index.ts
 mkdir migrations
-touch
 ```
 
 Em ./src/database/index.ts
@@ -76,11 +82,16 @@ import { createConnection } from 'typeorm';
 createConnection();
 ```
 
+Em ./src/server.ts
+```
+import 'reflect-metadata';
+import './database';
+```
+
 ```
 yarn add uuid
 yarn add @types/uuid -D
 ```
-
 
 ## Aula 3 - Testes - #focopraticagrupo
 

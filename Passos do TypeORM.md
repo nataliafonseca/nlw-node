@@ -228,3 +228,10 @@ export { router };
 
 
 ```
+
+No terminal, executamos a migration:
+
+```
+yarn typeorm migration:run
+```
+
